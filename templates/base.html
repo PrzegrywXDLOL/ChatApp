@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ChatApp</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="icon" href="{{url_for('static', filename='css/icon.png')}}">
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
+    integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
+    crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to ChatApp!</h1>
+    </header>
+    <div class="content">{% block content %} {%endblock%}</div>
+    <footer>
+        <div class="fleft">
+            <h3>Contact: XXXXXXXXXX@XXXXXX.XX <img src="/static/css/mail.png"></h3>
+        </div>
+        <div class="fmid">
+            <h3>Made By: Dawid Miętek</h3> 
+        </div>
+        <div class="fright">
+            <a href="https://www.facebook.com/"><img src="/static/css/facebook.png"></a>
+            <a href="https://www.instagram.com"><img src="/static/css/instagram.png"></a>
+            <a href="https://www.twitter.com"><img src="/static/css/twitter.png"></a>
+            <a href="https://www.linkedin.com"><img src="/static/css/linkedin.png"></a>
+            <a href="https://www.github.com"><img src="/static/css/github.png"></a>
+        </div>
+    </footer>
+</body>
+</html>
